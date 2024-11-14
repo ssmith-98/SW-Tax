@@ -281,15 +281,13 @@ unique_emplids = filtered2_Ndf.groupby(['concatenated_GradeStepTerm', 'Departmen
 # Explode the unique EMPLID lists to have each EMPLID in its own row
 exploded_emplids = unique_emplids.explode('EMPLID').reset_index(drop=True)
 
-# Print the result
-#print(exploded_emplids)
 
-# If you want to save it to a CSV file
+
+# Save to a CSV file
 output_file_exploded_emplids = 'exploded_emplids_by_grade_step_term.csv'
 exploded_emplids.to_csv(output_file_exploded_emplids, index=False)
 
-# Print a message to confirm
-#print(f"Exploded EMPLIDs grouped by concatenated_GradeStepTerm saved to {output_file_exploded_emplids}")
+
 
 
 
