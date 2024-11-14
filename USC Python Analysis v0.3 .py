@@ -9,10 +9,9 @@ import math
 import statistics
 
 
-
 # Change to the desired directory
-new_directory = r'C:\Users\smits\OneDrive - SW Accountants & Advisors Pty Ltd\Desktop\USC_dataSet'
-os.chdir(new_directory)
+#new_directory = r'C:\Users\smits\OneDrive - SW Accountants & Advisors Pty Ltd\Desktop\USC_dataSet'
+#os.chdir(new_directory)
 
 
 #Merge Dataframes with pandas
