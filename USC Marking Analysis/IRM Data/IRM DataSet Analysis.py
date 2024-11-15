@@ -120,3 +120,8 @@ def plot_histogram_seaborn(df, column, bins=10):
     plt.show()
 
 plot_histogram_seaborn(df, 'Weight', bins=10)
+
+
+#Example code on how to exclude an outlier from the data frame
+
+#plot_histogram_seaborn(df[df.Weight != 3.75], 'Weight', bins=10)
