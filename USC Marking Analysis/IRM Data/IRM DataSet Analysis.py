@@ -25,3 +25,11 @@ print(df.duplicated().sum())
 #check the shape of the data
 print("Data set shape No. Rows : No. Columns ")
 print(df.shape)
+
+#check the data types by column
+print("Data Types by Column: ")
+print(df.dtypes)
+
+#Return the number of each data type
+print("Number of columns by each data type: ")
+print(df.dtypes.value_counts())
