@@ -33,3 +33,18 @@ print(df.dtypes)
 #Return the number of each data type
 print("Number of columns by each data type: ")
 print(df.dtypes.value_counts())
+
+
+
+#OUTLIERS
+
+# Min Max check
+
+def find_extremes(df, column):
+    min_value = df[column].min()
+    max_value = df[column].max()
+    return min_value, max_value
+
+#Check by column for any extreme values
+min_val, max_val = find_extremes(df, 'Weight')
+print(f"Minimum: {min_val}, Maximum: {max_val}")
